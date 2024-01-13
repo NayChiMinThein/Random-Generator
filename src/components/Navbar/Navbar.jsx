@@ -9,7 +9,7 @@ const Navbar = () => {
       <Link to="/">
         <div className="flex items-center lg:ms-2 xl:ms-4">
           <GiPerspectiveDiceSixFacesRandom className="text-3xl lg:text-4xl xl:text-5xl me-1"/>
-          <h2 className="md:text-lg lg:text-xl xl:text-2xl font-semibold">Random Generator</h2>
+          <h2 className="md:text-lg lg:text-xl xl:text-2xl font-semibold">Random Generators</h2>
         </div>
       </Link>
       <div className="hidden md:block md:text-sm xl:text-base md:me-1 lg:me-4 font-medium">

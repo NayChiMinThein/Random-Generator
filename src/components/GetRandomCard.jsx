@@ -18,7 +18,7 @@ const GetRandomCard = ({icon, buttonText, copyBtn, bgColor, textColor, handleCli
   return (
     <div className={`rounded-md shadow-xl p-8 md:px-10 xl:px-14 relative bg-white ${textColor}`}>
          <Link to="/">
-            <button className={`${bgColor} text-white p-1 rounded-full text-sm md:text-base absolute top-3 left-2 md:left-3`}>
+            <button className={`${bgColor} text-white p-1 rounded-full text-base md:text-base absolute top-3 left-2 md:left-3`}>
                 <IoArrowBackOutline/>
             </button>
         </Link>

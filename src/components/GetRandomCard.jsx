@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import { IoArrowBackOutline } from "react-icons/io5";
 
@@ -15,26 +15,32 @@ const GetRandomCard = ({icon, buttonText, copyBtn, bgColor, textColor, handleCli
         }, 1000);
     }
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
   return (
-    <div className={`rounded-md shadow-xl p-8 md:px-10 xl:px-14 relative bg-white ${textColor}`}>
-         <Link to="/">
-            <button className={`${bgColor} text-white p-1 rounded-full text-base absolute top-3 left-2 md:left-3`}>
-                <IoArrowBackOutline/>
-            </button>
-        </Link>
-        {icon}
-        <p className="mt-5 mb-6 xl:mt-6 xl:mb-7 text-base xl:text-lg text-slate-800 text-center">
-            {data}
-        </p>
-        <div className="flex items-center justify-around md:justify-evenly text-sm xl:text-base">
-            <button onClick={handleClick} className={`text-white rounded p-2 ${bgColor}`}>
-                {buttonText}
-            </button>
-            {data && 
-                <button onClick={handleCopy} className={`text-white rounded p-2 ${bgColor}`}>
-                    {copyBtnText}
+    <div className="h-screen">
+        <div className={`rounded-md shadow-xl p-8 md:px-10 xl:px-14 relative bg-white ${textColor}`}>
+            <Link to="/">
+                <button className={`${bgColor} text-white p-1 rounded-full text-base absolute top-3 left-2 md:left-3`}>
+                    <IoArrowBackOutline/>
                 </button>
-            }
+            </Link>
+            {icon}
+            <p className="mt-5 mb-6 xl:mt-6 xl:mb-7 text-base xl:text-lg text-slate-800 text-center">
+                {data}
+            </p>
+            <div className="flex items-center justify-around md:justify-evenly text-sm xl:text-base">
+                <button onClick={handleClick} className={`text-white rounded p-2 ${bgColor}`}>
+                    {buttonText}
+                </button>
+                {data && 
+                    <button onClick={handleCopy} className={`text-white rounded p-2 ${bgColor}`}>
+                        {copyBtnText}
+                    </button>
+                }
+            </div>
         </div>
     </div>
   )

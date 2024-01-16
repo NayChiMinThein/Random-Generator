@@ -4,8 +4,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
   return (
-    <nav className="custom-bgColor p-4 md:p-5 text-slate-100 shadow-xl sticky top-0 
-      flex items-center justify-between">
+    <nav className="custom-bgColor p-4 md:p-5 text-slate-100 shadow-xl sticky top-0 left-0 z-10 flex items-center justify-between">
       <Link to="/">
         <div className="flex items-center lg:ms-2 xl:ms-4">
           <GiPerspectiveDiceSixFacesRandom className="text-4xl xl:text-5xl me-1"/>

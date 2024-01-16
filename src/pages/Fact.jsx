@@ -1,6 +1,5 @@
 import { useState } from "react";
 import GetRandomCard from "../components/GetRandomCard"
-import Navbar from "../components/Navbar/Navbar"
 import { TbBulbFilled } from "react-icons/tb";
 import axios from "axios";
 
@@ -20,7 +19,6 @@ const Fact = () => {
 
   return (
     <>
-      <Navbar/>
       <div className="mx-4 mt-10 md:mx-20 md:mt-14 lg:mx-40 lg:mt-16 xl:mx-60 xl:mt-20">
         <GetRandomCard 
           icon={

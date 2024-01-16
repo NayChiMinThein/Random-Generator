@@ -6,7 +6,7 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className="">
+    <>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-8 mx-4 md:mx-8 lg:mx-10 xl:mx-16 mt-10
         lg:mt-16">
         <Card 
@@ -37,28 +37,8 @@ const Home = () => {
           title="Affirmation Generator"
           textColor="text-violet-500"
           linkTo="/getAffirmation"/>
-
-<Card 
-          icon={
-            <FaHandHoldingHeart className="text-4xl mx-auto"/>
-          }
-          title="Affirmation Generator"
-          textColor="text-violet-500"
-          linkTo="/getAffirmation"/><Card 
-          icon={
-            <FaHandHoldingHeart className="text-4xl mx-auto"/>
-          }
-          title="Affirmation Generator"
-          textColor="text-violet-500"
-          linkTo="/getAffirmation"/><Card 
-          icon={
-            <FaHandHoldingHeart className="text-4xl mx-auto"/>
-          }
-          title="Affirmation Generator"
-          textColor="text-violet-500"
-          linkTo="/getAffirmation"/>
       </div>
-    </div>
+    </>
   )
 }
 

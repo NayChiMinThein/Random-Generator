@@ -9,7 +9,7 @@ import "./App.css"
 
 export default function App() {
   return (
-    <div className="custom-bgColor h-screen">
+    <div className="custom-bgColor min-h-screen">
       <BrowserRouter>
         <Navbar/> 
         <Routes>

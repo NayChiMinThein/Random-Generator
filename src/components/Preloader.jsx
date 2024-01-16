@@ -2,9 +2,9 @@ import { BallTriangle } from 'react-loader-spinner'
 
 const Preloader = () => {
   return (
-    <div className='flex justify-center items-center h-screen'>
+    <div className='flex justify-center items-center min-h-screen'>
         <BallTriangle
-            height={100}
+            height={105}
             width={120}
             radius={5}
             color="#fff"
